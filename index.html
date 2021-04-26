@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Cards</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Quiz Cards<br> Histoire de France</h1>
+    </div>
+
+    <div class="scoring">Score: <span class="score"></span> points / 10</div>
+    <div class="try hidden">
+        <div class="rejouer hidden">Rejouer?</div>
+        <div class="yes hidden"onclick="again()">Oui</div>
+        <div class="no hidden"onclick="closeGame()">Non</div>
+    </div>
+    <div class="wGame">
+        <div class="card">
+            <div class="message"></div>
+            <div class="question"></div>
+            <div class="answers">
+                <div class="answerA" onclick="repondreA()"></div>
+                <div class="answerB" onclick="repondreB()"></div>
+            </div>
+
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+
+</html>

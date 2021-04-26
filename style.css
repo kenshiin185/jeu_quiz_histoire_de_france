@@ -1,0 +1,109 @@
+
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.header {
+    width: 100vw;
+    height: 150px;
+    background-color: rgb(113, 150, 230);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.wGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scoring {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    
+    padding: 10px;
+    height: 300px;
+    
+}
+.anim {
+    animation: slide .4s linear;
+}
+.question {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.answers {
+    display: flex;
+    margin-top: 60px;
+    
+}
+.answerA,.answerB {
+    width: 140px;
+    height: 70px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color:  rgb(113, 150, 230);
+    text-align: center;
+}
+.answerA,.answerB,.yes,.no:hover {
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.message {
+    font-size: 2em;
+}
+.hidden {
+    display: none;
+}
+.try  {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+}
+.scoring {
+    text-align: center;
+}
+object {
+    opacity: 0;
+}
